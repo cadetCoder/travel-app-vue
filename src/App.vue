@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/brazil">Brazil</router-link>
+    </div>
+    <router-view />
   </div>
 </template>
 
@@ -11,7 +14,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Brazil,
   },
 };
 </script>
