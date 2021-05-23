@@ -22,6 +22,21 @@ const router = new Router({
       name: "brazil",
       component: Brazil,
     },
+    {
+      path: "/hawaii",
+      name: "hawaii",
+      component: Brazil,
+    },
+    {
+      path: "/jamaica",
+      name: "jamaica",
+      component: Brazil,
+    },
+    {
+      path: "/panama",
+      name: "panama",
+      component: Brazil,
+    },
   ],
 });
 
