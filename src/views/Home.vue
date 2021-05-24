@@ -33,6 +33,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .home {
   max-width: 1400px;
@@ -41,7 +42,7 @@ export default {
 img {
   max-width: 200px;
 }
-.destination {
+.destinations {
   display: flex;
   justify-content: space-between;
 }
