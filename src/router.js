@@ -24,7 +24,8 @@ const router = new Router({
     {
       path: "/jamaica",
       name: "jamaica",
-      component: () => import(/* webpackChunkName: "Jamaica"*/ "./views/Jamaica"),
+      component: () =>
+        import(/* webpackChunkName: "Jamaica"*/ "./views/Jamaica"),
     },
     {
       path: "/panama",
