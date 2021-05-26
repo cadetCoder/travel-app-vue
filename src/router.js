@@ -5,6 +5,7 @@ import Home from "./views/Home.vue";
 Vue.use(Router);
 
 const router = new Router({
+  linkExactActiveClass: "active-class",
   routes: [
     {
       path: "/",
