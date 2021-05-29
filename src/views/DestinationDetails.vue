@@ -1,3 +1,3 @@
 <template>
-  <h2></h2>
+  <p>The Destination is: {{ this.$route.params.id }}</p>
 </template>

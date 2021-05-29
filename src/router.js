@@ -37,7 +37,9 @@ const router = new Router({
       path: "/details",
       name: "DestinationDetails",
       component: () =>
-        import(/* webpackChunkName: "Details"*/ "./views/DestinationDetails"),
+        import(
+          /* webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails"
+        ),
     },
   ],
 });
