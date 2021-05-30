@@ -6,11 +6,12 @@
         :src="require(`@/assets/${destination.image}`)"
         :alt="destination.name"
       />
+      <p>{{ destination.description }}</p>
     </div>
   </section>
 </template>
 <script>
-import store from "@store.js";
+import store from "@/store.js";
 
 export default {
   data() {
@@ -22,7 +23,7 @@ export default {
     destination() {
       return store.destinations.find(
         // eslint-disable-next-line prettier/prettier
-        destination => destination.id == this.destinationId
+        destination => destination.id === this.destinationId
       );
     },
   },
