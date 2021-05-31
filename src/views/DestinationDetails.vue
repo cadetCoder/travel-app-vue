@@ -16,14 +16,14 @@ import store from "@/store.js";
 export default {
   data() {
     return {
-      destinationId: this.$route.params.id,
+      slug: this.$route.params.slug,
     };
   },
   computed: {
     destination() {
       return store.destinations.find(
         // eslint-disable-next-line prettier/prettier
-        destination => destination.id === this.destinationId
+        destination => destination.slug === this.slug
       );
     },
   },

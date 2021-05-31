@@ -13,7 +13,7 @@ const router = new Router({
       component: Home,
     },
     {
-      path: "/details/:id",
+      path: "/details/:slug",
       name: "DestinationDetails",
       component: () =>
         import(
