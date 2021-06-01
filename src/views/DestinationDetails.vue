@@ -1,14 +1,19 @@
 <template>
-  <section class="destination">
-    <h1>{{ destination.name }}</h1>
-    <div class="destination-details">
-      <img
-        :src="require(`@/assets/${destination.image}`)"
-        :alt="destination.name"
-      />
-      <p>{{ destination.description }}</p>
-    </div>
-  </section>
+  <div>
+    <section class="destination">
+      <h1>{{ destination.name }}</h1>
+      <div class="destination-details">
+        <img
+          :src="require(`@/assets/${destination.image}`)"
+          :alt="destination.name"
+        />
+        <p>{{ destination.description }}</p>
+      </div>
+    </section>
+    <section class="experiences">
+      <h2>Top experiences in {{ destination.name }}</h2>
+    </section>
+  </div>
 </template>
 <script>
 import store from "@/store";
