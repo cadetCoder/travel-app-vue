@@ -12,6 +12,21 @@
     </section>
     <section class="experiences">
       <h2>Top experiences in {{ destination.name }}</h2>
+      <div class="cards">
+        <div
+          v-for="experience in experiences"
+          :key="experience.slug"
+          class="card"
+        >
+          <img
+            src="require(`@/assets/${experience.image}`)"
+            :alt="experience.name"
+          />
+          <span class="card__text">
+            {{ experience.name }}
+          </span>
+        </div>
+      </div>
     </section>
   </div>
 </template>
