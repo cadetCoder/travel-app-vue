@@ -69,4 +69,8 @@ p {
   font-size: 20px;
   text-align: left;
 }
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
 </style>
