@@ -73,4 +73,21 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.cards img {
+  max-height: 200px;
+}
+.card {
+  padding: 0 20px;
+  position: relative;
+}
+.card__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
 </style>
