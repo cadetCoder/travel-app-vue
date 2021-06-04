@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */ /* eslint-disable prettier/prettier */
 <template>
   <section>
     <h1>Experiences</h1>
@@ -29,6 +30,12 @@ export default {
       return store.destinations.find(
         // eslint-disable-next-line prettier/prettier
         destination => destination.slug === this.slug
+      );
+    },
+    experience() {
+      return this.destination.experiences.find(
+        // eslint-disable-next-line prettier/prettier
+        experience => experience.slug === this.experienceSlug
       );
     },
   },
