@@ -7,6 +7,18 @@
         :src="require(`@/assets/${experience.image}`)"
         :alt="experience.name"
       />
+      <p>{{ experience.description }}</p>
     </div>
   </section>
 </template>
+<script>
+import store from "@/store.js";
+export default {
+  props: {
+    slug: {
+      type: String,
+      required: true,
+    },
+  },
+};
+</script>
