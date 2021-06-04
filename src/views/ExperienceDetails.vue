@@ -19,6 +19,10 @@ export default {
       type: String,
       required: true,
     },
+    experiencesSlug: {
+      type: String,
+      require: true,
+    },
   },
 };
 </script>
