@@ -19,9 +19,17 @@ export default {
       type: String,
       required: true,
     },
-    experiencesSlug: {
+    experienceSlug: {
       type: String,
       require: true,
+    },
+  },
+  computed: {
+    destination() {
+      return store.destinations.find(
+        // eslint-disable-next-line prettier/prettier
+        destination => destination.slug === this.slug
+      );
     },
   },
 };
