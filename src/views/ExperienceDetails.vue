@@ -49,4 +49,9 @@ img {
   width: 100%;
   max-height: 400px;
 }
+.experience-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
 </style>
