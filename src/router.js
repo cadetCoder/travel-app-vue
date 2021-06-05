@@ -20,7 +20,17 @@ const router = new Router({
       props: true,
       component: () =>
         import(
-          /* webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails"
+          /* webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails",
+          children: [
+            {
+              path: ":experienceSlug",
+              name: "experienceDetails",
+              props: true,
+              component: () => import (
+                /* webpackChunkName: "ExperienceDetails"*/)
+                from './views/ExperienceDetails'
+            },
+          ],
         ),
     },
   ],

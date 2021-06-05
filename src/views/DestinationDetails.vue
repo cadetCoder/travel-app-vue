@@ -1,3 +1,4 @@
+/* eslint-disable vue/valid-v-bind */
 <template>
   <div>
     <section class="destination">
@@ -18,15 +19,23 @@
           :key="experience.slug"
           class="card"
         >
-          <img
-            :src="require(`@/assets/${experience.image}`)"
-            :alt="experience.name"
-          />
-          <span class="card__text">
-            {{ experience.name }}
-          </span>
+          <router-link
+            :to="{
+              name: 'experienceDetails',
+              params: { experienceSlug: experience.slug },
+            }"
+          >
+            <img
+              :src="require(`@/assets/${experience.image}`)"
+              :alt="experience.name"
+            />
+            <span class="card__text">
+              {{ experience.name }}
+            </span>
+          </router-link>
         </div>
       </div>
+      <router-view :key="$route.path" />
     </section>
   </div>
 </template>
