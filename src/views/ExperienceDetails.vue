@@ -41,3 +41,12 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+img {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  max-height: 400px;
+}
+</style>
