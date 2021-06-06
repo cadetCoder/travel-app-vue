@@ -12,3 +12,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+.goBack {
+  display: flex;
+  cursor: pointer;
+}
+button {
+  border: 0;
+}
+</style>
