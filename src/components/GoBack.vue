@@ -13,7 +13,7 @@ export default {
 };
 </script>
 <style scoped>
-.goBack {
+.go-back {
   display: flex;
   cursor: pointer;
 }
