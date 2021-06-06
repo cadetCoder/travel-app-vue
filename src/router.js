@@ -15,7 +15,7 @@ const router = new Router({
       props: true,
     },
     {
-      path: "/details/:slug",
+      path: "/destination/:slug",
       name: "DestinationDetails",
       props: true,
       component: () =>
