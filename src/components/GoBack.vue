@@ -1,6 +1,6 @@
 <template>
   <span class="go-back">
-    <button @click="goBack"><i class="fas fa-chevron-left"></i>Go back</button>
+    <button @click="goBack">Go back</button>
   </span>
 </template>
 <script>
