@@ -48,4 +48,15 @@ export default {
     opacity: 1;
   }
 }
+.moveUp-leave-active {
+  animation: moveUp 0.3s ease-in;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+}
 </style>
