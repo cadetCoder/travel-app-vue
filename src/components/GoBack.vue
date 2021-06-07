@@ -19,5 +19,6 @@ export default {
 }
 button {
   border: 0;
+  text-decoration: none;
 }
 </style>
