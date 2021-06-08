@@ -34,6 +34,12 @@ const router = new Router({
         },
       ],
     },
+    {
+      path: "*",
+      name: "notFound",
+      component: () =>
+        import(/*webpackChunkName: "NotFound"*/ "./views/NotFound"),
+    },
   ],
 });
 
