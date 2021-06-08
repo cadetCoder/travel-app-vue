@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-
+import store from "@/store";
 Vue.use(Router);
 
 const router = new Router({
@@ -33,6 +33,17 @@ const router = new Router({
             ),
         },
       ],
+      beforeEnter: (to, from, next) => {
+        const exists = store.destinations.find(
+          // eslint-disable-next-line prettier/prettier
+          destination => destination.slug === to.params.slug
+        );
+        if (exists) {
+          next();
+        } else {
+          next({ name: "notFound " });
+        }
+      },
     },
     {
       path: "*",
