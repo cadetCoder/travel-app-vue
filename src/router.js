@@ -37,7 +37,8 @@ const router = new Router({
         const exists = store.destinations.find(
           // eslint-disable-next-line prettier/prettier
           destination => destination.slug === to.params.slug
-        );
+          // eslint-disable-next-line prettier/prettier
+        )
         if (exists) {
           next();
         } else {
@@ -46,7 +47,8 @@ const router = new Router({
       },
     },
     {
-      path: "*",
+      path: "/404/",
+      alias: "*",
       name: "notFound",
       component: () =>
         import(/*webpackChunkName: "NotFound"*/ "./views/NotFound"),
