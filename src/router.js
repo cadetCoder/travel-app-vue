@@ -47,7 +47,7 @@ const router = new Router({
       },
     },
     {
-      path: "/404/",
+      path: "/404",
       alias: "*",
       name: "notFound",
       component: () =>
