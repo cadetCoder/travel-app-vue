@@ -7,6 +7,18 @@ Vue.use(Router);
 const router = new Router({
   mode: "history",
   linkExactActiveClass: "active-class",
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+     } else {
+       const position = {};
+       if (to.hash) {
+         position.selector = to.hash;
+         return false;
+       }
+     }
+    }
+  },
   routes: [
     {
       path: "/",
