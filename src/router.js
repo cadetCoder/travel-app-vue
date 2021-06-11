@@ -7,7 +7,7 @@ Vue.use(Router);
 const router = new Router({
   mode: "history",
   linkExactActiveClass: "active-class",
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
      } else {
@@ -31,8 +31,8 @@ const router = new Router({
       name: "DestinationDetails",
       props: true,
       component: () =>
-        import(
-          /* webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails"
+        import (
+          /*webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails"
         ),
       children: [
         {
