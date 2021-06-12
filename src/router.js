@@ -8,15 +8,23 @@ const router = new Router({
   mode: "history",
   linkExactActiveClass: "active-class",
   scrollBehavior(to, from, savedPosition) {
+    let position = {};
     if (savedPosition) {
-      return savedPosition;
-     } else {
-       const position = {};
-       if (to.hash) {
-         position.selector = to.hash;
-         return false;
-       }
-     }
+      position = savedPosition;
+    } else if (to.hash) {
+      if (document.querySelector(to.hash)) {
+        position.selector = to.hash;
+        if (to.hash === '#experience'){
+          position.offset = { y: 140 };
+        }
+      }
+    } else position = { x:0, y:0 };
+
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolved(position);
+      }, 330);
+    });
     }
   },
   routes: [
