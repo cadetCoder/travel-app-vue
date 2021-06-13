@@ -34,13 +34,13 @@ const router = new Router({
       component: Home,
       props: true,
     },
+
     {
       path: "/destination/:slug",
       name: "DestinationDetails",
       props: true,
       component: () =>
-        import (
-          /*webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails"
+        import(/*webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails"
         ),
       children: [
         {
@@ -48,8 +48,7 @@ const router = new Router({
           name: "experienceDetails",
           props: true,
           component: () =>
-            import(
-              /*webpackChunkName: "ExperienceDetails"*/ "./views/ExperienceDetails"
+            import(/*webpackChunkName: "ExperienceDetails"*/ "./views/ExperienceDetails"
             ),
         },
       ],
