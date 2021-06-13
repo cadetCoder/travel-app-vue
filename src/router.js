@@ -49,7 +49,7 @@ const router = new Router({
           props: true,
           component: () =>
             import(/*webpackChunkName: "ExperienceDetails"*/ "./views/ExperienceDetails"
-            ),
+            )
         },
       ],
       beforeEnter: (to, from, next) => {
@@ -57,7 +57,7 @@ const router = new Router({
           // eslint-disable-next-line prettier/prettier
           destination => destination.slug === to.params.slug
           // eslint-disable-next-line prettier/prettier
-        )
+        );
         if (exists) {
           next();
         } else {
