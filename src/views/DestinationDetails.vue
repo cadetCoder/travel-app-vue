@@ -75,7 +75,7 @@ img {
   width: 100%;
   max-height: 400px;
 }
-.experiences{
+.experiences {
   padding: 40px;
 }
 .destination-details {
