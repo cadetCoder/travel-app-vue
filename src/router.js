@@ -6,7 +6,7 @@ Vue.use(Router);
 
 const router = new Router({
   mode: "history",
-  linkExactActiveClass: "vue-school-active-class",
+  linkExactActiveClass: "active-class",
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
