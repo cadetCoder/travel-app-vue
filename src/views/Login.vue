@@ -27,3 +27,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+</style>
