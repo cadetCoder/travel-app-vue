@@ -11,6 +11,7 @@
   </div>
 </template>
 <script>
+import store from "@/views/store";
 export default {
   data() {
     return {
@@ -20,7 +21,7 @@ export default {
   },
   methods: {
     login() {
-      // Auhenticate against API
+      store.user = this.username;
     },
   },
 };
