@@ -6,7 +6,7 @@
       <input v-model="username" type="text" name="username" class="input" />
       <label for="password">Password</label>
       <input v-model="password" type="password" class="input" />
-      <button class="btn">Login</button>
+      <button @click="login" class="btn">Login</button>
     </div>
   </div>
 </template>
@@ -17,6 +17,11 @@ export default {
       username: null,
       password: null,
     };
+  },
+  methods: {
+    login() {
+      // Auhenticate against API
+    },
   },
 };
 </script>
