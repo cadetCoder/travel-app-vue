@@ -23,6 +23,9 @@ export default {
     login() {
       store.user = this.username;
       this.$router.push("/user");
+      // eslint-disable-next-line prettier/prettier
+      const redirectPath = this.$router.query.redirect || '/';
+      this.$router.push(redirectPath);
     },
   },
 };
