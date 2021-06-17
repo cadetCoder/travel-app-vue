@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import store from "@/views/store";
+import store from "@/store";
 export default {
   data() {
     return {
@@ -22,9 +22,7 @@ export default {
   methods: {
     login() {
       store.user = this.username;
-      this.$router.push("/user");
-      // eslint-disable-next-line prettier/prettier
-      const redirectPath = this.$router.query.redirect || '/';
+      const redirectPath = this.$route.query.redirect || "/";
       this.$router.push(redirectPath);
     },
   },
