@@ -20,7 +20,7 @@
           >
             <img
               :src="require(`@/assets/${destination.image}`)"
-              alt="destination.name"
+              :alt="destination.name"
             />
           </router-link>
         </figure>
@@ -32,9 +32,8 @@
 <script>
 // @ is an alias to /src
 import store from "@/store.js";
-
 export default {
-  name: "Home",
+  name: "home",
   components: {},
   data() {
     return {
@@ -43,7 +42,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .home {
   max-width: 1400px;
@@ -57,7 +55,7 @@ img {
   justify-content: space-between;
 }
 a {
-  color: blue;
+  color: lightseagreen;
   text-decoration: none;
 }
 a:hover,
