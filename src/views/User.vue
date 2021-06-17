@@ -6,21 +6,19 @@
         :to="{
           name: 'invoices',
         }"
+        >Invoices</router-link
       >
-        Invoices
-      </router-link>
     </p>
+    <button @click="logOut" class="btn">Log out</button>
   </div>
 </template>
-
 <script>
-import store from "@store";
+import store from "@/store";
 export default {
   data() {
-    return;
-    {
-      user: store.user;
-    }
+    return {
+      user: store.user,
+    };
   },
   methods: {
     logOut() {
