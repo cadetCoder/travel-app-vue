@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */ /* eslint-disable prettier/prettier */
 <template>
   <section>
-    <h2>{{ destination.name }}</h2>
+    <h2>{{ experience.name }}</h2>
     <div class="experience-details">
       <img
         :src="require(`@/assets/${experience.image}`)"
@@ -21,20 +20,18 @@ export default {
     },
     experienceSlug: {
       type: String,
-      require: true,
+      required: true,
     },
   },
   computed: {
     destination() {
       return store.destinations.find(
-        // eslint-disable-next-line prettier/prettier
-        destination => destination.slug === this.slug
+        (destination) => destination.slug === this.slug
       );
     },
     experience() {
       return this.destination.experiences.find(
-        // eslint-disable-next-line prettier/prettier
-        experience => experience.slug === this.experienceSlug
+        (experience) => experience.slug === this.experienceSlug
       );
     },
   },
