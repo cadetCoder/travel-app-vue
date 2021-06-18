@@ -1,8 +1,9 @@
 <template>
   <span class="go-back">
-    <button @click="goBack">Go back</button>
+    <button @click="goBack">go back</button>
   </span>
 </template>
+
 <script>
 export default {
   methods: {
@@ -12,6 +13,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .go-back {
   display: flex;
@@ -19,6 +21,5 @@ export default {
 }
 button {
   border: 0;
-  text-decoration: none;
 }
 </style>
