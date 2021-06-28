@@ -1,4 +1,6 @@
-### Travel App
+### The Travel App
+
+![travel-app](https://user-images.githubusercontent.com/54025944/123700409-5897d800-d858-11eb-99a5-03a9f354a69c.png)
 
 Live demo can be found from this 👉 👉  [link](https://the-travel-app.vercel.app/)
 
