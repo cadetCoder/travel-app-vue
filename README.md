@@ -1,5 +1,7 @@
 ### Travel App
 
+Live demo can be found from this 👉 👉  [link](https://the-travel-app.vercel.app/)
+
 ### About ###
 
 This is a travel-app that I'm learning on how to build powerful Single Page Applications in Vue with the Vue Router.
