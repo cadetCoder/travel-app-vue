@@ -1,7 +1,10 @@
 <template>
   <footer>
     <div class="footer">
-      <p>Made with ❤ by Darrel Toledo</p>
+      <p>
+        Made with ❤ by
+        <a href="https://dtoledo.netlify.app/" target="_blank">Darrel Toledo</a>
+      </p>
     </div>
   </footer>
 </template>
