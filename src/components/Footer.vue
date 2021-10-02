@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer">
-      <p>Hello footer</p>
+      <p>Made with ❤ by Darrel Toledo</p>
     </div>
   </footer>
 </template>
