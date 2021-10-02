@@ -1,13 +1,15 @@
 <template>
-  <div class="footer">copy</div>
+  <footer><p>Hello footer</p></footer>
 </template>
 
 <script>
 export default {
-
-}
+  data() {
+    return {
+      //
+    };
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
