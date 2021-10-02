@@ -3,7 +3,9 @@
     <div class="footer">
       <p>
         Made with ❤ by
-        <a href="https://dtoledo.netlify.app/" target="_blank">Darrel Toledo</a>
+        <a href="https://dtoledo.netlify.app/" target="_blank">
+          Darrel Toledo
+        </a>
       </p>
     </div>
   </footer>
